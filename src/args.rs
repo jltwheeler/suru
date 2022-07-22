@@ -11,10 +11,7 @@ pub struct Cli {
 #[derive(Subcommand)]
 pub enum Commands {
     /// Add a todo via an interactive prompt
-    Add {
-        #[clap(value_parser)]
-        todo: String,
-    },
+    Add,
     /// Initialise the todo sqlite db
     Init,
 }
